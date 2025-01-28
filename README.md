@@ -32,7 +32,7 @@
 
 - Create a Virtual Machine for the Domain Controller name DC-1 (Store it in the same RG)
   - Select the OS to be Windows Server 2022
-- Make the NIC of DC-1 static
+- In Azure Setting make the NIC of DC-1 static
   - Virtual machines > DC-1 > Network settings > (Click the NIC primary) > IP configurations > ipconfig1 > static
         ![image](https://github.com/user-attachments/assets/bca0b490-fec8-4734-bd26-fed08e342db0)
 
@@ -42,8 +42,19 @@
 
    ![image](https://github.com/user-attachments/assets/ffe5d169-9d24-4976-a425-7f569de3ddda)
 
-- Log into  DC-1 via Remote Desktop and disable all firewalls
+- Log into DC-1 via Remote Desktop and disable all firewalls (This is done for testing connectivity)
 
     ![image](https://github.com/user-attachments/assets/1b4547c9-589c-49c8-8c20-556130ca3bfa)
 
+- In Azure Settings make Client-1 DNS seeting to DC-1 Private IP Address
+    - Virtual machines > DC-1 > Network settings > (Click the NIC primary) > DNS servers > (Change to custom) > Enter the private IP of DC-1
+      
+      ![image](https://github.com/user-attachments/assets/79faf215-daa1-4327-9acd-0b429665ce14)
+    
+- Login to Client-1 via Remote Desktop and ping DC-1 test the connectivity and check the DNS to it set to DC-1 private IP
+  ![image](https://github.com/user-attachments/assets/f5b90a52-ac0b-40ea-bff3-b168d3cea45a)
+
+
+
+      
 
