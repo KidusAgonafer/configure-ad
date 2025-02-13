@@ -71,8 +71,9 @@
     ![image](https://github.com/user-attachments/assets/0bf5bbb5-c45c-4e31-a705-2d3ef8a16044)
     ![image](https://github.com/user-attachments/assets/0afb258e-8106-4b7d-b392-3720e893b740)
     ![image](https://github.com/user-attachments/assets/b8f79c02-4169-4ade-986e-e0f99779559a)
-  - After Installing you will be prompted that you will signed out the machine will be restarting
+  - After Installing you will be prompted that you will sign out the machine will restart
     ![image](https://github.com/user-attachments/assets/b37093ad-54ba-4512-8ae2-aa388f7d61b7)
+    
 
 
  
