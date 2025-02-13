@@ -71,8 +71,38 @@
     ![image](https://github.com/user-attachments/assets/0bf5bbb5-c45c-4e31-a705-2d3ef8a16044)
     ![image](https://github.com/user-attachments/assets/0afb258e-8106-4b7d-b392-3720e893b740)
     ![image](https://github.com/user-attachments/assets/b8f79c02-4169-4ade-986e-e0f99779559a)
-  - After Installing you will be prompted that you will sign out the machine will restart
+- After Installing you will be prompted that you will sign out the machine will restart
     ![image](https://github.com/user-attachments/assets/b37093ad-54ba-4512-8ae2-aa388f7d61b7)
+- Creating Domain Admins and Organization
+  - After restarting login back to DC-1 with the user being the format [ mydomain.com\labuser ] ("labuser" can be replaced by the username that was set in Azure)
+  - After logging in open Active Directory Users and Computers (ADUC) and create three core Organizational Units (OU called "_EMPLOYEES", "_ADMINS" and "_CLIENTS"
+      right click mydomain.com > New > Organizational Unit   
+  - Create a new employee named "Jane Doe" (same password) with the username of "jane_admin"
+   right click _ADMINS > New > User
+    ![image](https://github.com/user-attachments/assets/510c7161-b2bc-4e7a-8dc0-a69f180fd946)
+    ![image](https://github.com/user-attachments/assets/ac6a085c-811d-4d12-9e35-10592b20a801)
+  - Add jane_admin to the "Domain Admins" Security Group
+    _ADMINS > right click Jane Doe profile > Properties > Member Of > Add > type "Domain Admins" where it states "Enter object names to select" > Check Names > Ok > Apply > Ok
+    ![image](https://github.com/user-attachments/assets/ea8fd2c8-1a10-4323-87bc-9737451e1807)
+  - Log out / close the connection to DC-1 and log back in as "mydomain.com\jane_admin". User jane_admin will be used as an admin account from now on.\
+- Joining Client-1 to your domain
+  - Login to Client-1 as labuser (created originally in Azure) and join it to the domain
+    login to Client-1 > go to Setting > About > Rename this PC (advanced) > Change > Domain > type mydomain.com > Ok > a window tap will pop up requiring entering an account with the authority to join the domain > type jane_admin credentials
+    
+    ![image](https://github.com/user-attachments/assets/55fc4ccc-4374-4f30-b83e-8690b64cdb83)
+     ![image](https://github.com/user-attachments/assets/61b00d58-f7a5-4142-a93e-0d3c7e8e80eb)
+  - There will be a pop-up window saying "Welcome to the [domain name] domain". Followed by another pop-up window stating the computer will restart. Click Ok for both pop-up Windows
+  - Go to DC-1 and go to Active Directory Users and Computers. Go to Computers and verify that Client-1 shows up. Then click and drag Client-1 inside the _CLIENTS OU.
+    ![image](https://github.com/user-attachments/assets/6846bc92-38da-4df2-ae28-fae25f584724)
+
+  
+
+    
+  
+
+    
+
+
     
 
 
