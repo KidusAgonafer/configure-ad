@@ -94,7 +94,8 @@
   - There will be a pop-up window saying "Welcome to the [domain name] domain". Followed by another pop-up window stating the computer will restart. Click Ok for both pop-up Windows
   - Go to DC-1 and go to Active Directory Users and Computers. Go to Computers and verify that Client-1 shows up. Then click and drag Client-1 inside the _CLIENTS OU.
     ![image](https://github.com/user-attachments/assets/6846bc92-38da-4df2-ae28-fae25f584724)
-
+    
+### **Creating users**
   
 
     
