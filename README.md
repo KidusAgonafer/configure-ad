@@ -112,6 +112,23 @@
 - After logging in with the chosen user you can the Command Prompt to verify its credentials using commands "whoami" and "ipconfig"
   ![image](https://github.com/user-attachments/assets/3025896c-7583-4319-ae9b-5e8b932adbae)
 
+### Enabling and Unlocking Accounts and Resetting Passwords
+- Configure Group Policy to Lockout the account after 5 attempts
+  - Login into DC-1 and go to Group Policy Management
+    ![image](https://github.com/user-attachments/assets/b0c9f2be-b1eb-42f1-9a5e-36d7bd623a39)
+  - Inside the Group Policy Management
+    right-click Default Domain Policy > Edit
+  - A new window will pop up called Group Policy Management Editor
+    click the drop-down Security Setting > Account Policies > and click Account Lockout Policy
+  - Change the Account Lockout Policy to 30 minutes duration, 5 invalid logon attempts, enable administrator account lockout and Reset account lock counter after 10 minutes
+    ![image](https://github.com/user-attachments/assets/b5ccc7f4-00b6-47c1-b53d-cfc1510b216a)
+
+- Dealing with Account Lockouts
+  - Get logged into DC-1 and pick a random user that was created previously (boba.baba will be used for this example)
+  - Try to log in with a user account with the wrong password at least 5 times until a message that shows the account is locked out
+    ![image](https://github.com/user-attachments/assets/05879928-a9b3-4f5c-a6d3-447c22856e03)
+
+
 
 
 
