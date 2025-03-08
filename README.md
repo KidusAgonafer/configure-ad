@@ -84,7 +84,7 @@
   - Add jane_admin to the "Domain Admins" Security Group
     _ADMINS > right click Jane Doe profile > Properties > Member Of > Add > type "Domain Admins" where it states "Enter object names to select" > Check Names > Ok > Apply > Ok
     ![image](https://github.com/user-attachments/assets/ea8fd2c8-1a10-4323-87bc-9737451e1807)
-  - Log out, close the connection to DC-1, and log back in as "mydomain.com\jane_admin". User jane_admin will be used as an admin account from now on.\
+  - Log out, close the connection to DC-1, and log back in as "mydomain.com\jane_admin". User jane_admin will be used as an admin account from now on.
 - Joining Client-1 to your domain
   - Login to Client-1 as labuser (created originally in Azure) and join it to the domain
     login to Client-1 > go to Setting > About > Rename this PC (advanced) > Change > Domain > type mydomain.com > Ok > a window tap will pop up requiring entering an account with the authority to join the domain > type jane_admin credentials
