@@ -84,7 +84,7 @@
   - Add jane_admin to the "Domain Admins" Security Group
     _ADMINS > right click Jane Doe profile > Properties > Member Of > Add > type "Domain Admins" where it states "Enter object names to select" > Check Names > Ok > Apply > Ok
     ![image](https://github.com/user-attachments/assets/ea8fd2c8-1a10-4323-87bc-9737451e1807)
-  - Log out / close the connection to DC-1 and log back in as "mydomain.com\jane_admin". User jane_admin will be used as an admin account from now on.\
+  - Log out, close the connection to DC-1, and log back in as "mydomain.com\jane_admin". User jane_admin will be used as an admin account from now on.\
 - Joining Client-1 to your domain
   - Login to Client-1 as labuser (created originally in Azure) and join it to the domain
     login to Client-1 > go to Setting > About > Rename this PC (advanced) > Change > Domain > type mydomain.com > Ok > a window tap will pop up requiring entering an account with the authority to join the domain > type jane_admin credentials
@@ -112,7 +112,7 @@
 - After logging in with the chosen user you can the Command Prompt to verify its credentials using commands "whoami" and "ipconfig"
   ![image](https://github.com/user-attachments/assets/3025896c-7583-4319-ae9b-5e8b932adbae)
 
-### Enabling and Unlocking Accounts and Resetting Passwords
+### **Enabling and Unlocking Accounts and Resetting Passwords**
 - Configure Group Policy to Lockout the account after 5 attempts
   - Login into DC-1 and go to Group Policy Management
     ![image](https://github.com/user-attachments/assets/b0c9f2be-b1eb-42f1-9a5e-36d7bd623a39)
